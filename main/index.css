@@ -14,9 +14,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px 0px;
 }
 
@@ -32,9 +32,24 @@
 }
 
 .navbar .navcont .flexbox {
-  width: 70%;
+  width: 40%;
   z-index: 4;
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar .navcont .flexbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
 
 .navbar .navcont .flexbox .sub-nav {
@@ -102,6 +117,10 @@
 }
 
 .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-inverse {
   background-color: transparent;
 }
 
